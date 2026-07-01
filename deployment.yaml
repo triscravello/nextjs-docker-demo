@@ -6,7 +6,7 @@ metadata:
   namespace: default
 spec:
   # Run 2 replicas for availability across both nodes
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: nextjs-eks-app
