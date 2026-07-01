@@ -54,7 +54,7 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           kubectl set image deployment/$DEPLOYMENT_NAME \
-            nextjs=$ECR_REGISTRY/$ECR_REPOSITORY:bad-image-tag
+            nextjs=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
       - name: Verify rollout
         run: |
