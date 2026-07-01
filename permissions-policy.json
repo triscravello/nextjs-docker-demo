@@ -17,7 +17,7 @@
         "ecr:UploadLayerPart",
         "ecr:CompleteLayerUpload"
       ],
-      "Resource": "arn:aws:ecr:us-east-1:593489476440:repository/nextjs-docker-demo"
+      "Resource": "arn:aws:ecr:us-east-1:593489476440:repository/nextjs-production"
     },
     {
       "Effect": "Allow",
