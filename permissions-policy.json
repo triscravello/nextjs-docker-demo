@@ -22,7 +22,7 @@
     {
       "Effect": "Allow",
       "Action": ["eks:DescribeCluster"],
-      "Resource": "arn:aws:eks:us-east-1:593489476440:cluster/nextwork-eks-cluster"
+      "Resource": "arn:aws:eks:us-east-1:593489476440:cluster/nextjs-eks-cluster"
     }
   ]
 }
