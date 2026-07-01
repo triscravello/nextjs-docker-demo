@@ -1,0 +1,23 @@
+# Kubernetes Deployment manifest for the Next.js app
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nextjs-eks-app
+  namespace: default
+spec:
+  # Run 2 replicas for availability across both nodes
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nextjs-eks-app
+  template:
+    metadata:
+      labels:
+        app: nextjs-eks-app
+    spec:
+      containers:
+        - name: nextjs
+          # Your ECR image URI - no imagePullSecrets needed
+          image: 593489476440.dkr.ecr.us-east-1.amazonaws.com/nextjs-production:latest
+          ports:
+            - containerPort: 3000

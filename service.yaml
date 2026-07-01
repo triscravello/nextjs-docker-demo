@@ -1,0 +1,15 @@
+# Kubernetes Service to expose the app via an AWS Load Balancer
+apiVersion: v1
+kind: Service
+metadata:
+  name: nextjs-eks-service
+  namespace: default
+spec:
+  # LoadBalancer type provisions an AWS Classic Load Balancer
+  type: LoadBalancer
+  selector:
+    app: nextjs-eks-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
