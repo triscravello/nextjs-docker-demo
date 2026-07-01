@@ -14,7 +14,7 @@ export default async function Home() {
 
   return (
     <main style={{ padding: "2rem", fontFamily: "system-ui, sans-serif" }}>
-      <h1>Next.js Production Docker Demo 🚀 CI/CD Pipeline Verified</h1>
+      <h1>Next.js Production Docker Demo - 🚀 CI/CD Pipeline Verified</h1>
       <p>Deployed automatically with GitHub Actions, Amazon ECR, and Amazon EKS using OIDC authentication.</p>
       <p>
         This page is server-rendered inside a Docker container. The greeting below comes from an API route that reads a runtime environment variable.
